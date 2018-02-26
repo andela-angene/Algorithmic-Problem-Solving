@@ -1,0 +1,16 @@
+n, ar = 1, [4]
+
+for i in range(n):
+    seasons = ar[i]
+    size = 1
+    isSpring = True
+    while seasons > 0:
+        if isSpring:
+            size *= 2
+        else:
+            size += 1
+        seasons -= 1
+        print(seasons, size, isSpring)
+        isSpring = not isSpring
+    print(size)
+
